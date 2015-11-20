@@ -1,0 +1,23 @@
+{
+  "name": "remindit",
+  "description": "Remind it from me!",
+  "main": "app/index.html",
+  "authors": [
+    "Ellioh Thot'o <ellioh.thoto@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "notes",
+    "reminder"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

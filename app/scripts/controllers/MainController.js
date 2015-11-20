@@ -6,6 +6,11 @@ app.controller('MainController', ['$scope', 'forecast', function($scope, forecas
 	$scope.tittle = 'Remind it!';
 
 	forecast.success(function(data) {
-		$scope.notebody = data;
+		//$scope.notebody = data;
+		$scope.htmlcontent = data
 	});
+
+	// Textarea setup
+	//$scope.htmlcontent = "<p>Hello World!</p>";
+
 }]);

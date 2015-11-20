@@ -47,18 +47,35 @@
     <!--<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.deep_purple-yellow.min.css"/>-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles/main.css">
+	  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300">
+
+
+	  <link rel='stylesheet' href='styles/bootstrap.min.css'>
+	  <link rel='stylesheet' href='styles/font-awesome.min.css'>
+
+	  <link rel='stylesheet' href='scripts/vendor/node_modules/textangular/dist/textAngular.css'>
+
 
     <!-- AngularJS lib -->
     <script src="scripts/shared/angular.js"></script>
+
+
+
     <!-- Application angularJS -->
     <script src="scripts/app.js"></script>
 
+	  <script src='scripts/vendor/node_modules/textangular/dist/textAngular-rangy.min.js'></script>
+	  <script src='scripts/vendor/node_modules/textangular/dist/textAngular-sanitize.min.js'></script>
+	  <script src='scripts/vendor/node_modules/textangular/dist/textAngular.min.js'></script>
 
 	 <!-- Controller-->
     <script src="scripts/controllers/MainController.js"></script>
 
 	 <!-- Service -->
 	  <script src="scripts/services/forecast.js"></script>
+
+
+
 
   </head>
   <body body ng-app="ForecastApp" class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base" >
@@ -68,7 +85,6 @@
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
           <h3>{{ tittle }}</h3>
-			 <h4>{{ fiveDay }}</h4>
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
@@ -148,11 +164,12 @@
             <!--</ul>-->
           <!--</section>-->
           <br/><br/>
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <section class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
                 <h4>Technology</h4>
-                {{ notebody }}
+                <!--{{ notebody }}-->
+					  <text-angular name="htmlcontent" ng-model="htmlcontent" ta-text-editor-class="form-content" ta-html-editor-class="form-content" ta-focussed-class="focussed"></text-angular>
               </div>
               <div class="mdl-card__actions">
                 <a href="#" class="mdl-button">Read our features</a>
